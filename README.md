@@ -1,6 +1,6 @@
 # 🔗 LinkShrink
 
-**LinkShrink** is a clean and simple URL shortening web application built using **Flask**. It allows users to shorten long URLs, manage links, and redirect with unique short slugs.
+**LinkShrink** is a clean and simple URL shortening web application built using **Flask**. It allows users to shorten long URLs, manage links, and redirect with unique short slugs. I used manus Ai to deveolp this project.
 
 ---
 
