@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkShrink - Free URL Shortener | Shorten Links Instantly</title>
+    <meta name="description" content="Free URL shortening service. Shorten long URLs instantly without registration. Fast, reliable, and mobile-friendly link shortener.">
+    <meta name="keywords" content="URL shortener, link shortener, short URL, free URL shortener, shorten links">
+    <meta name="author" content="LinkShrink">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="LinkShrink - Free URL Shortener">
+    <meta property="og:description" content="Shorten long URLs instantly without registration. Fast, reliable, and mobile-friendly.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://linkshrink.com">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="LinkShrink - Free URL Shortener">
+    <meta name="twitter:description" content="Shorten long URLs instantly without registration.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles.css">
+    
+    <!-- Google AdSense Auto Ads (Replace with your actual AdSense code) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+            crossorigin="anonymous"></script>
+    
+    <!-- AdSense Auto Ads Script -->
+   <!--  <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-XXXXXXXXXXXXXXXX",
+            enable_page_level_ads: true
+        });
+    </script>  -->
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "LinkShrink",
+        "description": "Free URL shortening service",
+        "url": "https://linkshrink.com",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>LinkShrink</h1>
+                    <span class="tagline">Shorten URLs instantly - No signup required</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h2 class="hero-title">Shorten Your URLs Instantly</h2>
+                <p class="hero-subtitle">Fast, reliable, and free URL shortening service</p>
+                
+                <!-- URL Shortening Form -->
+                <div class="url-form">
+                    <div class="input-group">
+                        <input 
+                            type="url" 
+                            id="urlInput" 
+                            placeholder="Enter your long URL here..." 
+                            class="url-input"
+                            autocomplete="url"
+                        >
+                        <button id="shortenBtn" class="shorten-btn">
+                            <span class="btn-text">Shorten</span>
+                            <div class="loading-spinner" style="display: none;"></div>
+                        </button>
+                    </div>
+                    <div id="errorMessage" class="error-message" style="display: none;"></div>
+                </div>
+
+                <!-- Results Section -->
+                <div id="resultSection" class="result-section" style="display: none;">
+                    <div class="result-card">
+                        <h3>Your shortened URL is ready!</h3>
+                        <div class="url-result">
+                            <div class="short-url-container">
+                                <input type="text" id="shortUrl" class="short-url-input" readonly>
+                                <button id="copyBtn" class="copy-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    <span class="copy-text">Copy</span>
+                                </button>
+                            </div>
+                            <div class="original-url">
+                                <span class="label">Original URL:</span>
+                                <span id="originalUrl" class="original-url-text"></span>
+                            </div>
+                        </div>
+                        <button id="shortenAnotherBtn" class="shorten-another-btn">Shorten Another URL</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AdSense Ad Space - Top Banner -->
+            <div class="ad-space ad-banner-top">
+                <!-- AdSense Leaderboard Ad (728x90) -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                     data-ad-slot="XXXXXXXXXX"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <!-- Features Section -->
+            <section class="features">
+                <h3 class="features-title">Why Choose LinkShrink?</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h4>No Registration Required</h4>
+                        <p>Start shortening URLs immediately without creating an account</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Instant Shortening</h4>
+                        <p>Get your shortened URL in seconds with our fast processing</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔗</div>
+                        <h4>Reliable Redirects</h4>
+                        <p>99.9% uptime ensures your links always work when needed</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h4>Mobile Friendly</h4>
+                        <p>Works perfectly on all devices - desktop, tablet, and mobile</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AdSense Ad Space - Bottom Banner -->
+            <div class="ad-space ad-banner-bottom">
+                <!-- AdSense Leaderboard Ad (728x90) -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                     data-ad-slot="XXXXXXXXXX"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+
+        <!-- Sidebar Ad for Desktop -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 LinkShrink. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/script.js"></script>
+</body>
+</html>
+
